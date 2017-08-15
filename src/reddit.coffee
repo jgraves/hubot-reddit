@@ -37,7 +37,7 @@ module.exports = (robot)->
       for item in list
         count++
 
-        text = ( item.data.title || item.data.link_title ) + " - " + ( item.data.url || item.data.body )
+        text = "hi"
         if item.data.stickied == "false"
           response_handler "hi"
 
