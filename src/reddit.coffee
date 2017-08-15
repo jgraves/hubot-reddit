@@ -37,10 +37,9 @@ module.exports = (robot)->
       for item in list
         count++
 
-        text = "hi"
-        if item.data.stickied == "false"
-          response_handler "hi"
-
+         text = ( item.data.title || item.data.link_title ) + " - " + ( item.data.url || item.data.body )
+         if item.data.sticked == "false"
+           response_handler text
      
         break if count == top
 
