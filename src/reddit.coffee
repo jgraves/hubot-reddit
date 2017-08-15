@@ -41,5 +41,6 @@ module.exports = (robot)->
         if item.data.stickied == "false"
           response_handler "hi"
 
+     
         break if count == top
 
