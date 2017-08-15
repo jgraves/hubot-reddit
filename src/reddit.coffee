@@ -38,7 +38,7 @@ module.exports = (robot)->
         count++
 
         text = ( item.data.title || item.data.link_title ) + " - " + ( item.data.url || item.data.body )
-        if !item.data.sticked
+        if !item.data.stickied
           response_handler text
 
         break if count == top
