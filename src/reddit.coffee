@@ -39,7 +39,7 @@ module.exports = (robot)->
 
         text = ( item.data.title || item.data.link_title ) + " - " + ( item.data.url || item.data.body )
         if item.data.stickied == "false"
-          response_handler text
+          response_handler "hi"
 
         break if count == top
 
